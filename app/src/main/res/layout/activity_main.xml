@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        android:paddingLeft="15dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:title="ZhiHu">
+    </android.support.v7.widget.Toolbar>
+
+    <com.zed.recycler.view.LRecyclerView
+        android:id="@+id/main_lr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.zed.recycler.view.LRecyclerView>
+
+</LinearLayout>
